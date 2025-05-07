@@ -1,5 +1,4 @@
 aiohttp[speedups]
-aria2p
 asyncurban
 bs4
 cowpy
