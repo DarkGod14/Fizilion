@@ -3,7 +3,7 @@
 # Licensed under the Raphielscape Public License, Version 1.d (the "License");
 # you may not use this file except in compliance with the License.
 #
-# The entire source code is OSSRPL except 'whois' which is MPL
+# The entire source code is OSSRPL except 'info' which is MPL
 # License: MPL and OSSRPL
 """ Userbot module for getiing info about any user on Telegram(including you!). """
 
@@ -18,7 +18,7 @@ from userbot import CMD_HELP, TEMP_DOWNLOAD_DIRECTORY, trgg
 from userbot.events import register
 
 
-@register(pattern="^\{trg}whois(?: |$)(.*)".format(trg=trgg), outgoing=True)
+@register(pattern="^\{trg}info(?: |$)(.*)".format(trg=trgg), outgoing=True)
 async def who(event):
 
     await event.edit(
@@ -154,7 +154,7 @@ async def fetch_info(replied_user, event):
 
 CMD_HELP.update(
     {
-        "whois": ".whois <username> or reply to someones text with .whois\
+        "info": ".info <username> or reply to someones text with .info\
     \nUsage: Gets info of an user."
     }
 )
